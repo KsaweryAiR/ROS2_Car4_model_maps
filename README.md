@@ -1,4 +1,4 @@
 ### Model:
-![](Photos/model.png)
+![](photos/model.png)
 ### Level 2:
-![](Photos/level2.png)
+![](photos/level2.png)
