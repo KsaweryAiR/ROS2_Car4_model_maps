@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot name="car4" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="gps_length" value="0.1" />
+    <xacro:property name="gps_width" value="0.1" /> 
+    <xacro:property name="gps_height" value="0.06" />
+
+    <link name="gps_link">  
+        <visual>
+            <geometry>
+                <box size="${gps_length} ${gps_width} ${gps_height}"/> 
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${gps_length} ${gps_width} ${gps_height}"/> 
+            </geometry>                
+        </collision>
+        <xacro:box_inertia m="0.1" l="${gps_length}" w="${gps_width}" h="${gps_height}"
+                       xyz="0 0 0" rpy="0 0 0" />
+    </link>
+
+    <!-- Joint for GPS Link -->
+    <joint name="gps_joint" type="fixed">
+        <origin xyz="0.45 0.0 0.23" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="gps_link"/>
+    </joint>
+
+    <!-- Gazebo Configuration for GPS -->
+    <gazebo reference="gps_link">
+        <sensor type="gps" name="gps_sensor">
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10.0</update_rate>
+            <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+                <!-- Plugin Parameters -->
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+     <gazebo reference="gps_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+</robot>

@@ -1,24 +1,36 @@
 <?xml version="1.0"?>
 <robot name="car4" xmlns:xacro="http://www.ros.org/wiki/xacro">
     
+      <!-- Zmienne definiujące współczynniki tarcia -->
+    <xacro:property name="mu1_value" value="0.1" />
+    <xacro:property name="mu2_value" value="0.1" />
+
     <gazebo reference="base_link">
         <material>Gazebo/Orange</material>
     </gazebo>
 
-    <gazebo reference="back_right_wheel_link">
+    <gazebo reference="rear_right_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1>${mu1_value}</mu1>
+        <mu2>${mu2_value}</mu2>
     </gazebo>
 
-    <gazebo reference="back_left_wheel_link">
+    <gazebo reference="rear_left_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1>${mu1_value}</mu1>
+        <mu2>${mu2_value}</mu2>
     </gazebo>
 
     <gazebo reference="front_right_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1>${mu1_value}</mu1>
+        <mu2>${mu2_value}</mu2>
     </gazebo>
 
     <gazebo reference="front_left_wheel_link">
         <material>Gazebo/Black</material>
+        <mu1>${mu1_value}</mu1>
+        <mu2>${mu2_value}</mu2>
     </gazebo>
 
     <gazebo reference="second_link">
@@ -35,12 +47,14 @@
 
             <!-- Przypisanie przegubów kół (napędzanych) -->
             <left_joint>base_front_left_wheel_joint</left_joint>
-            <left_joint>base_rear_left_wheel_joint</left_joint>
             <right_joint>base_front_right_wheel_joint</right_joint>
+            <left_joint>base_rear_left_wheel_joint</left_joint>
             <right_joint>base_rear_right_wheel_joint</right_joint>
 
             <!-- Parametry kół -->
             <wheel_separation>0.6</wheel_separation>
+            <wheel_separation>0.6</wheel_separation>
+            <wheel_diameter>0.3</wheel_diameter>
             <wheel_diameter>0.3</wheel_diameter>
 
             <!-- Topic do odbierania komend -->
