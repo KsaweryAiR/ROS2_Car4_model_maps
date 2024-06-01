@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot name="car4" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <gazebo reference="base_link">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <gazebo reference="back_right_wheel_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="back_left_wheel_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="front_right_wheel_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="front_left_wheel_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="second_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+
+
+     <gazebo>
+        <plugin name="car4_drive_controller" filename="libgazebo_ros_diff_drive.so">
+
+            <update_rate>100.0</update_rate>
+            <num_wheel_pairs>2</num_wheel_pairs>
+
+            <!-- Przypisanie przegubów kół (napędzanych) -->
+            <left_joint>base_front_left_wheel_joint</left_joint>
+            <left_joint>base_rear_left_wheel_joint</left_joint>
+            <right_joint>base_front_right_wheel_joint</right_joint>
+            <right_joint>base_rear_right_wheel_joint</right_joint>
+
+            <!-- Parametry kół -->
+            <wheel_separation>0.6</wheel_separation>
+            <wheel_diameter>0.3</wheel_diameter>
+
+            <!-- Topic do odbierania komend -->
+            <command_topic>cmd_vel</command_topic>
+            
+            <!-- Publikowanie danych odometrycznych -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+            <publish_distance>true</publish_distance>
+            <publish_steerangle>true</publish_steerangle>
+
+            <!-- Ramki odometryczne -->
+            <odometry_frame>odom_demo</odometry_frame>
+            <robot_base_frame>base_footprint</robot_base_frame>
+
+        </plugin>
+    </gazebo>
+
+
+</robot>
