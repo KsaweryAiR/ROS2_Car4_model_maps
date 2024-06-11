@@ -25,8 +25,7 @@ Controlling the robot.
 
 **Robot Model**
 
-<img src="photos/model.png" style="width: 50%; height: 50%;">
-<img src="photos/model.gif" style="width: 50%; height: 50%;">
+<img src="photos/model.png" style="width: 50%; height: 50%;"> <img src="photos/model.gif" style="width: 100%; height: 100%;">
 
 **Map in Gazebo**
 
