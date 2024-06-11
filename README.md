@@ -57,3 +57,7 @@ Controlling the robot.
 
 <img src="photos/res2.png" style="width: 75%; height: 75%;">
 
+**graph model with nav2**
+
+<img src="photos/navi2.svg" style="width: 75%; height: 75%;">
+
