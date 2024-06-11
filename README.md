@@ -29,7 +29,7 @@ Controlling the robot.
 
 **Frames**
 
-<img src="photos/frames.png" style="width: 50%; height: 50%;">
+<img src="photos/frames.png" style="width: 100%; height: 100%;">
 
 **Map in Gazebo**
 
