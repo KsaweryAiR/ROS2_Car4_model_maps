@@ -23,29 +23,28 @@
 
 Running simulation in Gazebo and RVIZ.
 
-
 **Terminal 2:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
 
 Controlling the robot.
 
-
 **Terminal 3:** `ros2 launch slam_toolbox online_async_launch.py params_file:=mapper_params_online_async.yaml use_sim_time:=True` 
 
 Add map in RViZ displays. Running slam
-
 
 **Terminal 4:** `ros2 run nav2_map_server map_saver_cli -f name_your_map` 
 
 save your map
 
 
+**ROS2 Nav2 Navigation**
+
 **Terminal 1:** `ros2 launch car4_bringup navigation2.launch.py` 
 
-Running simulation in Gazebo and RVIZ.
+Running simulation in Gazebo and RVIZ. 
 
-**Terminal 2:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
+select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates.
 
-Controlling the robot.
+<img src="photos/pose2f.png" style="width: 20%; height: 20%;">
 
 **Robot Model**
 
