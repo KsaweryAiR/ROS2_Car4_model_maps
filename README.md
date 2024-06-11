@@ -19,21 +19,14 @@
 
 Running simulation in Gazebo and RVIZ.
 
-**Terminal 2:** `ros2 run pose_estimation state_estimator`
-
-Running position estimation with GTSAM.
-
-**Terminal 3:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
+**Terminal 2:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
 
 Controlling the robot.
-
-**(Optional) Terminal 4:** `ros2 run pose_estimation pose_saver` 
-
-Saving sensors data to a text file.
 
 **Robot Model**
 
 <img src="photos/model.png" style="width: 50%; height: 50%;">
+<img src="photos/model.gif" style="width: 50%; height: 50%;">
 
 **Map in Gazebo**
 
