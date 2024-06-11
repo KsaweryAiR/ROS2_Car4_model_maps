@@ -1,3 +1,5 @@
+**Results:**
+
 # SLAM: https://youtu.be/OBFY93SkfI0
 # NAV2: https://youtu.be/dDSp_8K_5yw
 
@@ -15,7 +17,9 @@
 
 `source install/setup.bash`
 
-**Terminal 1:** `ros2 launch car4_bringup navigation2.launch.py` 
+**Generate a Map with slam_toolbox**
+
+**Terminal 1:** `ros2 launch car4_bringup car4_gazebo.launch.xml` 
 
 Running simulation in Gazebo and RVIZ.
 
@@ -23,13 +27,32 @@ Running simulation in Gazebo and RVIZ.
 
 Controlling the robot.
 
+**Terminal 3:** `ros2 launch slam_toolbox online_async_launch.py params_file:=mapper_params_online_async.yaml use_sim_time:=True` 
+
+Add map in RViZ displays. Running slam
+
+**Terminal 4:** `ros2 run nav2_map_server map_saver_cli -f name_your_map` 
+
+save your map
+
+
+**ROS2 Nav2 Navigation**
+
+**Terminal 1:** `ros2 launch car4_bringup navigation2.launch.py` 
+
+Running simulation in Gazebo and RVIZ. 
+
+select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates.
+
+<img src="photos/pose2f.png" style="width: 20%; height: 20%;">
+
 **Robot Model**
 
 <img src="photos/model.png" style="width: 50%; height: 50%;"> <img src="photos/model.gif" style="width: 84%; height: 84%;">
 
-**Frames**
+**Frames & graph**
 
-<img src="photos/frames.png" style="width: 50%; height: 50%;">
+<img src="photos/frames.png" style="width: 50%; height: 50%;"><img src="photos/modelcar.svg" style="width: 50%; height: 50%;">
 
 **Worlds in Gazebo**
 
@@ -55,5 +78,9 @@ Controlling the robot.
 
 **ROS2 Nav2 Navigation**
 
-<img src="photos/res.png" style="width: 100%; height: 100%;">
+<img src="photos/res2.png" style="width: 75%; height: 75%;">
+
+**graph model with nav2**
+
+<img src="photos/navi2.svg" style="width: 75%; height: 75%;">
 
