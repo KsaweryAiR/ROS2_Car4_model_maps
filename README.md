@@ -45,6 +45,10 @@ Controlling the robot.
 
 <img src="photos/map3.png" style="width: 75%; height: 75%;">
 
+**Generate a Map with slam_toolbox**
+
+<img src="photos/lev2.png" style="width: 50%; height: 50%;"><img src="photos/lev2g.png" style="width: 50%; height: 50%;">
+
 **Map in RViZ**
 You should delete the entire sensor visualizations, then select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates.
 
