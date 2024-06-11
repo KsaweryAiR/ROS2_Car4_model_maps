@@ -53,9 +53,7 @@ Controlling the robot.
 
 <img src="photos/maprviz.png" style="width: 70%; height: 70%;">
 
+**ROS2 Nav2 Navigation**
 
-<img src="photos/map_inst_2.png" style="width: 75%; height: 75%;">
+<img src="photos/res.png" style="width: 100%; height: 100%;">
 
-Add Pose - /optimized_pose
-
-<img src="photos/map_est.png" style="width: 75%; height: 75%;">
