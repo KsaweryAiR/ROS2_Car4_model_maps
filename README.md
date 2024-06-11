@@ -29,11 +29,15 @@ Controlling the robot.
 
 **Frames**
 
-<img src="photos/frames.png" style="width: 100%; height: 100%;">
+<img src="photos/frames.png" style="width: 50%; height: 50%;">
 
-**Map in Gazebo**
+**Worlds in Gazebo**
 
-<img src="photos/map.png" style="width: 75%; height: 75%;">
+<img src="photos/map1.png" style="width: 75%; height: 75%;">
+
+<img src="photos/map2.png" style="width: 75%; height: 75%;">
+
+<img src="photos/map3.png" style="width: 75%; height: 75%;">
 
 **Map in RViZ**
 You should delete the entire sensor visualizations, then select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates.
