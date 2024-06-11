@@ -27,6 +27,10 @@ Controlling the robot.
 
 <img src="photos/model.png" style="width: 50%; height: 50%;"> <img src="photos/model.gif" style="width: 84%; height: 84%;">
 
+**Frames**
+
+<img src="photos/frames.png" style="width: 50%; height: 50%;">
+
 **Map in Gazebo**
 
 <img src="photos/map.png" style="width: 75%; height: 75%;">
