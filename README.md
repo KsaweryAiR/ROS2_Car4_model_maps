@@ -33,10 +33,13 @@ Controlling the robot.
 
 **Worlds in Gazebo**
 
+**Track1 easy**
 <img src="photos/map1.png" style="width: 75%; height: 75%;">
 
+**Track2 medium**
 <img src="photos/map2.png" style="width: 75%; height: 75%;">
 
+**Track3 hard**
 <img src="photos/map3.png" style="width: 75%; height: 75%;">
 
 **Map in RViZ**
