@@ -19,16 +19,14 @@
 
 **Generate a Map with slam_toolbox**
 
-**Terminal 1:** 
+**Terminal 1:** Running simulation in Gazebo and RVIZ.
 ```bash
 `ros2 launch car4_bringup car4_gazebo.launch.xml` 
 ```
-
-Running simulation in Gazebo and RVIZ.
-
-**Terminal 2:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
-
-Controlling the robot.
+**Terminal 2:** Controlling the robot. 
+```bash
+`ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
+```
 
 **Terminal 3:** `ros2 launch slam_toolbox online_async_launch.py params_file:=mapper_params_online_async.yaml use_sim_time:=True` 
 
