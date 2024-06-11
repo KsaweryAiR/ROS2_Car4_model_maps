@@ -23,13 +23,16 @@
 
 Running simulation in Gazebo and RVIZ.
 
+
 **Terminal 2:** `ros2 run teleop_twist_keyboard teleop_twist_keyboard` 
 
 Controlling the robot.
 
+
 **Terminal 3:** `ros2 launch slam_toolbox online_async_launch.py params_file:=mapper_params_online_async.yaml use_sim_time:=True` 
 
 Add map in RViZ displays. Running slam
+
 
 **Terminal 4:** `ros2 run nav2_map_server map_saver_cli -f name_your_map` 
 
