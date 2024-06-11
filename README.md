@@ -29,17 +29,31 @@ Controlling the robot.
 
 **Frames**
 
-<img src="photos/frames.png" style="width: 100%; height: 100%;">
+<img src="photos/frames.png" style="width: 50%; height: 50%;">
 
-**Map in Gazebo**
+**Worlds in Gazebo**
 
-<img src="photos/map.png" style="width: 75%; height: 75%;">
+**Track 1 easy**
 
-**Map in RViZ**
-You should delete the entire sensor visualizations, then select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates.
+<img src="photos/map1.png" style="width: 75%; height: 75%;">
 
-<img src="photos/map_inst_2.png" style="width: 75%; height: 75%;">
+**Track 2 medium**
 
-Add Pose - /optimized_pose
+<img src="photos/map2.png" style="width: 75%; height: 75%;">
 
-<img src="photos/map_est.png" style="width: 75%; height: 75%;">
+**Track 3 hard**
+
+<img src="photos/map3.png" style="width: 75%; height: 75%;">
+
+**Generate a Map with slam_toolbox**
+
+<img src="photos/lev2.png" style="width: 50%; height: 50%;"><img src="photos/lev2g.png" style="width: 48%; height: 48%;">
+
+**Map after slam**
+
+<img src="photos/maprviz.png" style="width: 70%; height: 70%;">
+
+**ROS2 Nav2 Navigation**
+
+<img src="photos/res.png" style="width: 100%; height: 100%;">
+
