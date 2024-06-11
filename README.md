@@ -19,7 +19,10 @@
 
 **Generate a Map with slam_toolbox**
 
-**Terminal 1:** `ros2 launch car4_bringup car4_gazebo.launch.xml` 
+**Terminal 1:** 
+```bash
+`ros2 launch car4_bringup car4_gazebo.launch.xml` 
+```
 
 Running simulation in Gazebo and RVIZ.
 
