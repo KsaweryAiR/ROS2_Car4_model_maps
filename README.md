@@ -44,7 +44,7 @@ Running simulation in Gazebo and RVIZ.
 
 select '2D Pose Estimate' and click on the map at the origin (0,0) like TF coordinates and next select Nav2 Goal and click where you want on the map.
 
-<img src="photos/pose2f.png" style="width: 45%; height: 45%;">
+<img src="photos/pose2f.png" style="width: 65%; height: 65%;">
 
 **Robot Model**
 
