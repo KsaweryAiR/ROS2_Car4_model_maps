@@ -55,5 +55,5 @@ Controlling the robot.
 
 **ROS2 Nav2 Navigation**
 
-<img src="photos/res.png" style="width: 100%; height: 100%;">
+<img src="photos/res2.png" style="width: 100%; height: 100%;">
 
