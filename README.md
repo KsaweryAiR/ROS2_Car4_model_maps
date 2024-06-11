@@ -27,9 +27,9 @@ Controlling the robot.
 
 <img src="photos/model.png" style="width: 50%; height: 50%;"> <img src="photos/model.gif" style="width: 84%; height: 84%;">
 
-**Frames**
+**Frames & graph**
 
-<img src="photos/frames.png" style="width: 50%; height: 50%;">
+<img src="photos/frames.png" style="width: 50%; height: 50%;"><img src="photos/modelcar.svg" style="width: 50%; height: 50%;">
 
 **Worlds in Gazebo**
 
