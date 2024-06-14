@@ -15,7 +15,7 @@ def generate_launch_description():
         default=os.path.join(
             get_package_share_directory('car4_bringup'),
             'map',
-            'level2.yaml'))
+            'level1.yaml'))
     param_file_name = 'car4_param.yaml'
     param_dir = LaunchConfiguration(
         'params_file',
@@ -43,7 +43,7 @@ def generate_launch_description():
             default_value=os.path.join(
                 get_package_share_directory('car4_bringup'),
                 'worlds',
-                'level2.world'),
+                'level1.world'),
             description='Path to the Gazebo world file'
         ),
         DeclareLaunchArgument(

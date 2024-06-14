@@ -13,7 +13,7 @@
     </node>
 
     <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
-        <arg name="world" value="$(find-pkg-share car4_bringup)/worlds/level2.world" />
+        <arg name="world" value="$(find-pkg-share car4_bringup)/worlds/level3.world" />
     </include>
 
     <node pkg="gazebo_ros" exec="spawn_entity.py"
